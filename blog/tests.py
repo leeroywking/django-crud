@@ -5,9 +5,6 @@ from django.urls import reverse
 
 
 class BlogTests(TestCase):
-    def test_home_page_status(self):
-        self.helper_status_code_200("home")
-
     def test_blog_page_status(self):
         self.helper_status_code_200("blog")
 
