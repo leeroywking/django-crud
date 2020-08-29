@@ -41,7 +41,7 @@ jobs:
         run: poetry run pytest --cov . --cov-fail-under=0
 
       - name: Generate Coverage report
-        run: poetry run coverage run --source='.' manage.py test django_snacks
+        run: poetry run coverage run --source='.' manage.py test blog
 
       - name: Validate code coverage
         run: poetry run coverage report --fail-under=60
