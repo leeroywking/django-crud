@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        {%block title%}
+        default title
+        {%endblock%}
+        </title>
+        <link rel="stylesheet" href="" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                {% block header %}
+                default header
+                {%endblock%}
+            </h1>
+        </header>
+        <main>
+            {%block content %}
+            <h2>
+                Content title
+            </h2>
+            <p>
+                Content body
+            </p>
+            {%endblock%}
+        </main>
+        <!-- <footer>
+            <h2>
+                this is the footer
+            </h2>
+        </footer> -->
+    </body>
+</html>

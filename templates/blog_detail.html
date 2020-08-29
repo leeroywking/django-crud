@@ -1,0 +1,15 @@
+{%extends 'base.html'%} 
+{%block title %} 
+ahh real monsters 
+{%endblock%} 
+{% block header%}
+{{blog.title}}
+{%endblock%}
+
+{% block content %}
+<p>{{blog.author}}</p>
+<article>{{blog.body}}</article>
+<a href="{% url 'update_blog' blog.id %}"> <button>Update</button></a>
+<a href="{% url 'delete_blog' blog.id %}"> <button>Delete</button></a>
+
+{% endblock %}
