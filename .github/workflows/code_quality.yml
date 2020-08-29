@@ -29,7 +29,7 @@ jobs:
             poetry-$
       - name: Set Poetry config
         run: |
-          poetry config virtualenvs.in-project false
+          poetry config virtualenvs.in-project true
           poetry config virtualenvs.path ~/.virtualenvs
       - name: Install Dependencies
         run: poetry install
